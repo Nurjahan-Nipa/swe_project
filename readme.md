@@ -4,12 +4,16 @@ This repository contains code, models, and data to use ASSORT_S and ASSORT_IS.
 To use ASSORT_s, go to `code/assort_s.ipynb`. To use ASSORT_is, go to `code/assort_is.ipynb`. One just needs to input the information of the SO post that needs to be summarized and the model would run to output a possibility of each sentence being important.
 
 Specifically, if you want to run ASSORT_s, just fill in the following variables in the notebook:
-`question_title = "This should be replaced with real question title."
+```python
+question_title = "This should be replaced with real question title."
 answer_body = "This should be replaced with SO post with html tags."
-question_tags = ["Java", "Python"]`
+question_tags = ["Java", "Python"]
+```
 
 For ASSORT_is, fill in these variables:
-`answer_body = "This should be replaced with SO post with html tags."`
+```python
+answer_body = "This should be replaced with SO post with html tags."
+```
 
 ## Models
 The `models` folder contains models trained on our dataset. Specifically, `1.pkl`, `1.pkl`, and `1.pkl` are used to classify sentences from SO posts with different question types. `question_classifier.pkl` is used to classify questions.
